@@ -6,6 +6,10 @@ prompt.start();
 
 prompt.get(['num1',
             'num2'], function (err, result) {
+    if(err || !result || !result.num1 || !result.num2){
+        console.error('We had an error !!', err || 'no values were inserted');
+        return;
+    }
 
     var num1 = result.num1;
     var num2 = result.num2;
