@@ -11,8 +11,8 @@ prompt.get(['num1',
         return;
     }
 
-    var num1 = result.num1;
-    var num2 = result.num2;
+    var num1 = Number(result.num1);
+    var num2 = Number(result.num2);
 
     if (isNaN(num1) || isNaN(num2)){
         console.error("ERROR: you have not typed numbers")
